@@ -60,6 +60,10 @@ let package = Package(
         .library(
             name: packageName,
             targets: ["PowerSync"]),
+        .library(
+            name: "PowerSyncDynamic",
+            type: .dynamic,
+            targets: ["PowerSync"]),
     ],
     dependencies: conditionalDependencies,
     targets: [
